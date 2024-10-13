@@ -4,7 +4,7 @@
  * @return {string}
  */
 const mergeAlternately = function (word1, word2) {
-  const englishLetters = "abcdefghijklmnopqrstuvwxyz ".split("");
+  const englishLowerLetters = "abcdefghijklmnopqrstuvwxyz ".split("");
   const arr1 = word1.split("");
   const arr2 = word2.split("");
   const result = [];
@@ -12,8 +12,8 @@ const mergeAlternately = function (word1, word2) {
   if (
     arr1.length < 1 ||
     arr2.length > 100 ||
-    arr1.find((el) => !englishLetters.includes(el)) ||
-    arr2.find((el) => !englishLetters.includes(el))
+    arr1.find((el) => !englishLowerLetters.includes(el)) ||
+    arr2.find((el) => !englishLowerLetters.includes(el))
   ) {
     throw new Error("Invalid input");
   }
