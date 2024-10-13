@@ -1,4 +1,4 @@
-import mergeAlternately from "./01-merge-strings-alternatly";
+import mergeAlternately from "./01-merge-strings-alternately";
 
 test("mergeAlternately with equal length strings", () => {
   const word1 = "abc";
