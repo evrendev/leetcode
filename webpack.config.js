@@ -5,7 +5,7 @@ import path from "path";
 export default (env) => {
   const envFile = env.NODE_ENV ? `.env.${env.NODE_ENV}` : ".env.development";
   return {
-    entry: "./src/leetcode-75/03-kids-with-the-greatest-number-of-candies.js",
+    entry: "./src/leetcode-75/04-can-place-flowers.js",
     output: {
       filename: "bundle.js",
       path: path.resolve("dist"),
