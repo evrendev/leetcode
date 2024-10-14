@@ -5,7 +5,7 @@ import path from "path";
 export default (env) => {
   const envFile = env.NODE_ENV ? `.env.${env.NODE_ENV}` : ".env.development";
   return {
-    entry: "./src/leetcode-75/01-merge-strings-alternatly.js",
+    entry: "./src/leetcode-75/02-greatest-common-divisor-of-strings.js",
     output: {
       filename: "bundle.js",
       path: path.resolve("dist"),
