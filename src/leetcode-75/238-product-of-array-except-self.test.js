@@ -1,4 +1,4 @@
-import productExceptSelf from "./07-product-of-array-except-self";
+import productExceptSelf from "./238-product-of-array-except-self";
 
 test("Case 1", () => {
   const nums = [1, 2, 3, 4];

@@ -1,4 +1,4 @@
-import mergeAlternately from "./01-merge-strings-alternately";
+import mergeAlternately from "./1768-merge-strings-alternately";
 
 test("Case 1", () => {
   const word1 = "abc";

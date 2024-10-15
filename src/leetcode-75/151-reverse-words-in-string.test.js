@@ -1,4 +1,4 @@
-import reverseWords from "./06-reverse-words-in-string";
+import reverseWords from "./151-reverse-words-in-string";
 
 test("Case 1", () => {
   const s = "the sky is blue";

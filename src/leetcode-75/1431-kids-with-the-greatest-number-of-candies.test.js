@@ -1,4 +1,4 @@
-import kidsWithCandies from "./03-kids-with-the-greatest-number-of-candies";
+import kidsWithCandies from "./1431-kids-with-the-greatest-number-of-candies";
 
 test("Case 1", () => {
   const candies = [2, 3, 5, 1, 3];

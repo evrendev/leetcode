@@ -1,4 +1,4 @@
-import gcdOfStrings from "./02-greatest-common-divisor-of-strings";
+import gcdOfStrings from "./1071-greatest-common-divisor-of-strings";
 
 test("Case 1", () => {
   const str1 = "ABCABC";
