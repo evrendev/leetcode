@@ -2,12 +2,12 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-const productExceptSelf = (array) => {
+const productExceptSelf = (numbers) => {
   let totalProduct = 1;
   let zeroCount = 0;
   let zeroIndex = -1;
 
-  array.forEach((val, i) => {
+  numbers.forEach((val, i) => {
     if (val === 0) {
       zeroCount += 1;
       zeroIndex = i;
@@ -17,16 +17,16 @@ const productExceptSelf = (array) => {
   });
 
   if (zeroCount > 1) {
-    return array.fill(0);
+    return numbers.fill(0);
   }
 
   if (zeroCount === 1) {
-    const result = array.fill(0);
+    const result = numbers.fill(0);
     result[zeroIndex] = totalProduct;
     return result;
   }
 
-  return array.map((val) => totalProduct / val);
+  return numbers.map((val) => totalProduct / val);
 };
 
 export default productExceptSelf;
