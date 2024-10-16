@@ -14,6 +14,15 @@ To install the dependencies, run:
 npm install
 ```
 
+## Environment Variables
+
+The project can load environment variables from `.env` files based on the `NODE_ENV` parameter. The following files are used:
+
+- `.env.development` for development
+- `.env.production` for production
+
+These files are automatically loaded by the `dotenv-webpack` plugin configured in the [webpack.config.js](webpack.config.js) file.
+
 ## Scripts
 
 Here are the available scripts you can run:
@@ -65,15 +74,6 @@ To build the project for testing:
 ```sh
 npm run build:test
 ```
-
-## Environment Variables
-
-The project can load environment variables from `.env` files based on the `NODE_ENV` parameter. The following files are used:
-
-- `.env.development` for development
-- `.env.production` for production
-
-These files are automatically loaded by the `dotenv-webpack` plugin configured in the [webpack.config.js](webpack.config.js) file.
 
 ## Author
 
