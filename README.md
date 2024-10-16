@@ -1,4 +1,4 @@
-# Project Name: Leetcode Solutions
+# Leetcode Solutions
 
 ## Description
 
@@ -28,7 +28,7 @@ npm run test
 
 ### Development
 
-To start the development server:
+To start the development server with the entry setting in the [webpack.config.js](webpack.config.js) file:
 
 ```sh
 npm run start:dev
@@ -36,7 +36,7 @@ npm run start:dev
 
 ### Production
 
-To start the production server:
+To start the production server with the entry setting in the [webpack.config.js](webpack.config.js) file:
 
 ```sh
 npm run start:prod
@@ -65,6 +65,15 @@ To build the project for testing:
 ```sh
 npm run build:test
 ```
+
+## Environment Variables
+
+The project can load environment variables from `.env` files based on the `NODE_ENV` parameter. The following files are used:
+
+- `.env.development` for development
+- `.env.production` for production
+
+These files are automatically loaded by the `dotenv-webpack` plugin configured in the [webpack.config.js](webpack.config.js) file.
 
 ## Author
 
