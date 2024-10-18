@@ -12,7 +12,9 @@ const productExceptSelf = (nums) => {
     right[n - i - 1] = right[n - i] * nums[n - i];
   }
 
-  return nums.map((num, index) => left[index] * right[index]);
+  return nums.map((num, index) =>
+    Object.is(left[index] * right[index], -0) ? 0 : left[index] * right[index]
+  );
 };
 
 export default productExceptSelf;
